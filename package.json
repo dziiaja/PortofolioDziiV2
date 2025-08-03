@@ -1,19 +1,21 @@
 {
-  "name": "portofolio-v3",
+  "name": "portofoliodziiv2",
   "version": "3.2.0",
-  "description": "Portofolio Haikal Mabrur Versi Terbaru",
+  "description": "Portofolio Dzikri Putra Gumilar",
   "main": "postcss.config.js",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Portofolio",
     "Websites"
   ],
-  "author": "Haikal Mabrur",
+  "author": "Dzikri",
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.53.0",
@@ -35,6 +37,7 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.16",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3",
     "vite": "^4.5.5"
