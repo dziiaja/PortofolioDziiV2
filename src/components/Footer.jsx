@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaInstagram, FaWhatsapp, FaDiscord, FaYoutube } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaWhatsapp, FaDiscord, FaYoutube, FaTiktok } from 'react-icons/fa';
 import { SiX } from "react-icons/si";
 import $icon from '../../images/icon.png'
 import { Link as RouterLink, useLocation } from "react-router-dom";
@@ -28,40 +28,40 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: FaGithub,
-      link: 'https://github.com/AnakTentara',
+      link: 'https://github.com/dziiaja/DzikriLaravel.git',
       name: 'GitHub'
     },
     {
       icon: FaInstagram,
-      link: 'https://instagram.com/haikal_mabrur',
+      link: 'https://www.instagram.com/dzii.20/',
       name: 'Instagram'
     },
     {
       icon: SiX,
-      link: 'https://x.com/AnakTentara2',
+      link: 'https://x.com/PutraDzikr6235',
       name: 'X (Twitter)'
     },
     {
       icon: FaWhatsapp,
-      link: 'https://wa.me/6289675732001',
+      link: 'https://wa.me/6289531300561',
       name: 'WhatsApp'
     },
     {
       icon: FaDiscord,
-      link: 'https://discord.com/users/804720825109315605',
+      link: 'https://wa.me/6289531300561',
       name: 'Discord'
     },
     {
-      icon: FaYoutube,
-      link: 'https://youtube.com/@AnakTentaraIDN',
-      name: 'YouTube'
+      icon: FaTiktok,
+      link: 'https://www.tiktok.com/@panditaaptaa__?is_from_webapp=1&sender_device=pc',
+      name: 'Tiktok'
     }
   ];
 
   return (
     <footer className="relative mt-20 z-10">
       {/* Divider with gradient */}
-      <div className="h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+      <div className="h-1 bg-gradient-to-r from-indigo-500 via-indigo-500 to-gray-500"></div>
       
       {/* Footer content with solid background - using multiple techniques to ensure opacity */}
       <div 
@@ -99,12 +99,12 @@ const Footer = () => {
               >
                 <motion.img
                   src={icon}
-                  alt="Haikal Mabrur Logo"
+                  alt="Dzikri Logo"
                   className="w-16 h-16"
                   whileHover={{ rotate: 5 }}
                   whileTap={{ rotate: 375 }}
                 />
-                <motion.h2 whileTap={{ scale: 0.98, rotate: 5 }} whileHover={{ scale: 1.05, rotate: -5 }} className="text-white text-2xl font-bold">Haikal Mabrur</motion.h2>
+                <motion.h2 whileTap={{ scale: 0.98, rotate: 5 }} whileHover={{ scale: 1.05, rotate: -5 }} className="text-white text-2xl font-bold">Dzikri Putra Gumilar</motion.h2>
               </motion.div>
               <motion.p whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.02 }} className="text-gray-400">
                 Saya Dzikri, Pelajar jurusan RPL yang antusias terhadap pemrograman. Bagi saya, setiap proyek adalah peluang untuk belajar, tumbuh, dan menciptakan solusi bermakna dengan karakter dan desain yang kuat.
@@ -151,21 +151,6 @@ const Footer = () => {
                     </motion.li>
                   </>
                 )}
-                <div>
-                  <RouterLink to='/more-about'>
-                    <motion.li whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.03 }} className="text-gray-400 hover:text-primary-500 transition">More About Me</motion.li>
-                  </RouterLink>
-                </div>
-                <div>
-                  <RouterLink to='/more-projects'>
-                    <motion.li whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.03 }} className="text-gray-400 hover:text-primary-500 transition">More Projects</motion.li>
-                  </RouterLink>
-                </div>
-                <div>
-                  <RouterLink to='/downloads'>
-                    <motion.li whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.03 }} className="text-gray-400 hover:text-primary-500 transition">Downloads</motion.li>
-                  </RouterLink>
-                </div>
               </motion.ul>
             </motion.div>
 
@@ -202,7 +187,7 @@ const Footer = () => {
           {/* Copyright */}
           <motion.div whileTap={{ scale: 0.98 }} className="mt-8 pt-8 border-t border-gray-800 text-center">
             <p className="text-gray-500">
-              © {currentYear} Haikal Mabrur. All Rights Reserved.
+              © {currentYear} Dzikri Putra Gumilar. All Rights Reserved.
             </p>
           </motion.div>
         </div>

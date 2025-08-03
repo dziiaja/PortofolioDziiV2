@@ -136,7 +136,7 @@ const Navbar = () => {
                   <motion.span 
                     className={`text-sm font-medium transition-colors duration-300 ${
                       activeSection === link.id
-                        ? 'text-[#ff3d4d]' 
+                        ? 'text-[#00bfff]' 
                         : 'text-gray-300 hover:text-white'
                     }`}
                     whileHover={{ y: -2 }}
@@ -148,7 +148,7 @@ const Navbar = () => {
                   {activeSection === link.id && (
                     <motion.div 
                       className="absolute bottom-0 left-0 w-full h-0.5"
-                      style={{ backgroundColor: '#ff3d4d' }}
+                      style={{ backgroundColor: '#00bfff' }}
                       layoutId="activeIndicator"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}

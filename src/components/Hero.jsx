@@ -3,7 +3,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { scrollToSection } from '../utils/scrollToSection';
 import { useTypingText } from '../utils/typingAnimation';
 import $icon from '../../images/icon.png';
-import { FaArrowDown, FaCode, FaServer, FaRobot } from 'react-icons/fa';
+import { FaArrowDown, FaCode, FaServer, FaRobot, FaBlogger, FaTiktok, FaCameraRetro } from 'react-icons/fa';
+import { FaRegMoneyBill1 } from 'react-icons/fa6';
 
 const Hero = () => {
   const icon = $icon;
@@ -136,7 +137,7 @@ const Hero = () => {
     { icon: FaCode, text: "Web Development", delay: 0.2 },
     { icon: FaServer, text: "Database Setup", delay: 0.4 },
     { icon: FaRobot, text: "AI Implementation", delay: 0.6 },
-    { icon: FaRobot, text: "Content Creator", delay: 0.8 }
+    { icon: FaCameraRetro, text: "Content Creator", delay: 0.8 }
   ];
 
   return (
@@ -181,9 +182,9 @@ const Hero = () => {
                 style={{ y: badgeY }}
               >
                 <div className="relative group cursor-pointer">
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-600 to-blue-500 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-indigo-600 to-gray-500 rounded-full opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
                   <div className="relative px-3 py-1 md:px-4 md:py-1.5 bg-black bg-opacity-90 backdrop-filter backdrop-blur-sm rounded-full flex items-center gap-2 border border-white/10">
-                    <span className="text-xs md:text-sm font-medium bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    <span className="text-xs md:text-sm font-medium bg-gradient-to-r from-indigo-400 to-indigo-500 bg-clip-text text-transparent">
                       Student Developer
                     </span>
                   </div>
@@ -202,7 +203,7 @@ const Hero = () => {
                   y: titleY
                 }}
               >
-                I'm <span className="bg-gradient-to-r from-[#ff3d4d] to-[#ff6d7e] bg-clip-text text-transparent inline-block hover:scale-105 transition-transform duration-300">Dzikri</span>
+                I'm <span className="bg-gradient-to-r from-[#00a2ff] to-[#00ccff] bg-clip-text text-transparent inline-block hover:scale-105 transition-transform duration-300">Dzikri</span>
               </motion.h1>
               
               {/* Description */}
@@ -240,7 +241,7 @@ const Hero = () => {
                       transition: { duration: 0.2 }
                     }}
                   >
-                    <skill.icon className="text-[#ff3d4d] text-xs md:text-sm" />
+                    <skill.icon className="text-[#00ccff] text-xs md:text-sm" />
                     <span className="text-xs md:text-sm font-medium text-white">{skill.text}</span>
                   </motion.div>
                 ))}
@@ -258,10 +259,10 @@ const Hero = () => {
                   onClick={() => scrollToSection('contact')}
                   whileHover={{ 
                     scale: 1.05,
-                    boxShadow: "0 0 30px rgba(255, 61, 77, 0.5)"
+                    boxShadow: "0 0 30px rgba(61, 184, 255, 0.5)"
                   }}
                   whileTap={{ scale: 0.95 }}
-                  className="bg-gradient-to-r from-[#ff3d4d] to-[#ff6d7e] text-white px-5 py-2 md:px-6 md:py-2.5 rounded-full transition duration-300 flex items-center space-x-2 text-xs md:text-sm font-medium shadow-lg hover:shadow-xl"
+                  className="bg-gradient-to-r from-[#00ccff] to-[#00a2ad] text-white px-5 py-2 md:px-6 md:py-2.5 rounded-full transition duration-300 flex items-center space-x-2 text-xs md:text-sm font-medium shadow-lg hover:shadow-xl"
                 >
                   <span>Get in Touch</span>
                   <motion.div
@@ -294,7 +295,7 @@ const Hero = () => {
               >
                 {/* Enhanced glowing effect */}
                 <motion.div 
-                  className="absolute inset-0 rounded-[20px] md:rounded-[30px] bg-gradient-to-r from-[#ff3d4d] to-[#ff6d7e] blur-xl md:blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"
+                  className="absolute inset-0 rounded-[20px] md:rounded-[30px] bg-gradient-to-r from-[#1ff1ff] to-[#02bac7] blur-xl md:blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"
                   animate={{ 
                     scale: [1, 1.1, 1],
                     opacity: [0.3, 0.5, 0.3]
@@ -309,7 +310,7 @@ const Hero = () => {
                 {/* Profile image container */}
                 <motion.div
                   className="w-40 h-40 sm:w-48 sm:h-48 md:w-64 md:h-64 bg-gradient-to-br from-gray-900 to-black rounded-[20px] md:rounded-[30px] p-1 md:p-1.5 relative z-10 overflow-hidden shadow-2xl"
-                  style={{ boxShadow: "0 0 40px rgba(255, 61, 77, 0.2)" }}
+                  style={{ boxShadow: "0 0 40px rgba(61, 145, 255, 0.2)" }}
                 >
                   <div className="w-full h-full rounded-[15px] md:rounded-[25px] overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 p-2 md:p-3 backdrop-blur-xl backdrop-filter">
                     <img
@@ -321,7 +322,7 @@ const Hero = () => {
                   
                   {/* Animated border */}
                   <motion.div 
-                    className="absolute inset-0 rounded-[20px] md:rounded-[30px] border-2 border-[#ff3d4d] opacity-50 group-hover:opacity-70 transition-opacity duration-300"
+                    className="absolute inset-0 rounded-[20px] md:rounded-[30px] border-2 border-[#1ff1ff] opacity-50 group-hover:opacity-70 transition-opacity duration-300"
                     animate={{ 
                       rotate: 360,
                       scale: [1, 1.05, 1]
@@ -354,7 +355,7 @@ const Hero = () => {
           className="flex items-center justify-center cursor-pointer group"
         >
           <motion.div
-            className="absolute w-6 h-6 md:w-8 md:h-8 bg-[#ff3d4d] rounded-full opacity-20 group-hover:opacity-30 blur-lg"
+            className="absolute w-6 h-6 md:w-8 md:h-8 bg-[#1ff1ff] rounded-full opacity-20 group-hover:opacity-30 blur-lg"
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.2, 0.3, 0.2]
@@ -366,8 +367,8 @@ const Hero = () => {
             }}
           />
           <FaArrowDown 
-            className="text-[#ff3d4d] text-lg md:text-xl relative z-10" 
-            style={{ filter: "drop-shadow(0 0 12px rgba(255, 61, 77, 0.6))" }}
+            className="text-[#1ff1ff] text-lg md:text-xl relative z-10" 
+            style={{ filter: "drop-shadow(0 0 12px rgba(61, 168, 255, 0.6))" }}
           />
         </motion.div>
       </motion.div>

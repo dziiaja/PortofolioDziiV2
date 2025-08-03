@@ -76,10 +76,10 @@ const InteractiveDivider = () => {
         <h1 
           className={`font-bold tracking-wider ${isTouchDevice ? 'text-5xl' : 'text-7xl'}`}
               style={{
-            background: 'linear-gradient(to right, #60A5FA, #93C5FD)',
+            background: 'linear-gradient(to right,rgb(96, 188, 250),rgb(18, 214, 248))',
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            textShadow: '0 0 25px rgba(96, 165, 250, 0.6), 0 0 45px rgba(147, 197, 253, 0.4)',
+            textShadow: '0 0 25px rgba(55, 175, 255, 0.78), 0 0 45px rgba(13, 201, 248, 0.85)',
             userSelect: 'none',
             WebkitUserSelect: 'none',
             touchAction: 'none'
@@ -89,8 +89,8 @@ const InteractiveDivider = () => {
         </h1>
       </motion.div>
 
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[95%] h-[1px] bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] h-[1px] bg-gradient-to-r from-transparent via-sky-400/50 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[95%] h-[1px] bg-gradient-to-r from-transparent via-indigo-400/50 to-transparent" />
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[95%] h-[1px] bg-gradient-to-r from-transparent via-indigo-400/50 to-transparent" />
     </div>
   );
 };

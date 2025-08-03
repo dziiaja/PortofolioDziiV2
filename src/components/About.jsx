@@ -124,7 +124,7 @@ const About = () => {
             className="w-full max-w-3xl mx-auto px-4 flex flex-col items-center py-10 relative"
           >
             {/* Visual center guide - left */}
-            <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-r from-transparent to-blue-500/50"></div>
+            <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-r from-transparent to-indigo-500/50"></div>
             
             {/* Content */}
             <motion.h2
@@ -133,11 +133,11 @@ const About = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold text-center w-full"
             >
-              <strong className='font-bold bg-gradient-to-r from-blue-400 via-purple-600 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider'>About Me</strong>
+              <strong className='font-bold bg-gradient-to-r from-indigo-400 via-white-600 to-gray-300 bg-clip-text text-transparent uppercase tracking-wider'>About Me</strong>
             </motion.h2>
 
             <motion.div 
-              className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full my-6"
+              className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-gray-500 rounded-full my-6"
               initial={{ width: 0 }}
               animate={isHeadingInView ? { width: 96 } : { width: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -153,7 +153,7 @@ const About = () => {
             </motion.p>
             
             {/* Visual center guide - right */}
-            <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-l from-transparent to-purple-500/50"></div>
+            <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-l from-transparent to-grey-500/50"></div>
           </div>
         </motion.div>
 
@@ -161,9 +161,9 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
           {/* Bio Section */}
           <motion.div variants={itemVariants} className="space-y-8">
-            <div className="bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-2xl p-8 backdrop-blur-sm border border-white/5">
+            <div className="bg-gradient-to-r from-indigo-500/10 to-gray-500/10 rounded-2xl p-8 backdrop-blur-sm border border-white/5">
               <h3 className="text-3xl font-bold text-white mb-4">
-                  <span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-indigo-400 to-gray-300 bg-clip-text text-transparent">
                     Who am I?
                   </span>
                 </h3>
@@ -172,9 +172,9 @@ const About = () => {
                 </p>
             </div>
             
-            <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-2xl p-8 backdrop-blur-sm border border-white/5">
+            <div className="bg-gradient-to-r from-indigo-500/10 to-gray-500/10 rounded-2xl p-8 backdrop-blur-sm border border-white/5">
               <h3 className="text-3xl font-bold text-white mb-4">
-                  <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-indigo-400 to-gray-300 bg-clip-text text-transparent">
                     My Journey
                   </span>
                 </h3>
@@ -205,7 +205,7 @@ const About = () => {
             >
               {/* Glowing border effect */}
               <motion.div 
-              className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-30"
+              className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500 via-indigo-500 to-gray-500 opacity-30"
                 animate={{ 
                 opacity: [0.2, 0.4, 0.2],
                 rotate: [0, 2, 0],
@@ -221,27 +221,27 @@ const About = () => {
               <div className="bg-gray-900/90 p-8 rounded-xl h-full backdrop-blur-sm">
                   <div className="flex flex-col space-y-8">
                   <motion.div className="flex items-start space-x-4" variants={itemVariants}>
-                    <div className="p-4 rounded-xl bg-blue-500/20 text-blue-400 shrink-0">
+                    <div className="p-4 rounded-xl bg-indigo-500/20 text-indigo-400 shrink-0">
                       <FaGraduationCap size={28} />
                       </div>
                       <div>
                         <h3 className="text-xl font-bold text-white">SMKN 4 BANDUNG</h3>
                         <p className="text-gray-300">Senior High School at SMKN 4 Bandung, St.Kliningan No.6 City Bandung, Indonesia</p>
                       <div className="mt-3 flex flex-wrap gap-2">
-                        <span className="px-3 py-1 bg-blue-500/10 rounded-lg text-blue-300 text-sm">Software engineering</span>
-                        <span className="px-3 py-1 bg-purple-500/10 rounded-lg text-purple-300 text-sm">2024 - 2026</span>
+                        <span className="px-3 py-1 bg-indigo-500/10 rounded-lg text-indigo-300 text-sm">Software engineering</span>
+                        <span className="px-3 py-1 bg-indigo-500/10 rounded-lg text-indigo-300 text-sm">2024 - 2026</span>
                       </div>
                       </div>
                     </motion.div>
                     
                   <motion.div className="flex items-start space-x-4" variants={itemVariants}>
-                    <div className="p-4 rounded-xl bg-purple-500/20 text-purple-400 shrink-0">
+                    <div className="p-4 rounded-xl bg-indigo-500/20 text-indigo-400 shrink-0">
                       <FaEnvelope size={28} />
                       </div>
                       <div>
                         <h3 className="text-xl font-bold text-white">Contact</h3>
                       <p className="text-gray-300 mb-2">Want to connect? Feel free to reach out!</p>
-                      <p className="font-bold text-xl bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-3">
+                      <p className="font-bold text-xl bg-gradient-to-r from-indigo-400 to-indigo-500 bg-clip-text text-transparent mb-3">
                           zikrigumilar2008@gmail.com
                         </p>
                       <div className="flex items-center gap-4">
@@ -299,7 +299,7 @@ const About = () => {
         {/* Skills Section */}
         <motion.div variants={itemVariants} className="mb-20">
           <h3 className="text-3xl font-bold text-white mb-10 text-center">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-500 via-indigo-500 to-gray-300 bg-clip-text text-transparent">
                 My Skills
               </span>
             </h3>
@@ -313,7 +313,7 @@ const About = () => {
                 className="group p-6 rounded-xl cursor-pointer bg-gradient-to-br from-gray-900/90 to-gray-800/90 border border-white/5 hover:border-white/10 transition-colors"
                 >
                   <div className="flex flex-col items-center text-center">
-                  <div className="p-4 rounded-xl bg-gradient-to-r from-blue-500/20 to-purple-500/20 mb-4 group-hover:from-blue-500/30 group-hover:to-purple-500/30 transition-colors">
+                  <div className="p-4 rounded-xl bg-gradient-to-r from-indigo-500/20 to-gray-500/20 mb-4 group-hover:from-gray-500/30 group-hover:to-gray-500/30 transition-colors">
                     <skill.icon className="text-2xl text-white" size={28} />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-3">{skill.title}</h3>
@@ -327,7 +327,7 @@ const About = () => {
         {/* Languages Section */}
         <motion.div variants={itemVariants} className="mb-16">
           <h3 className="text-3xl font-bold text-white mb-10 text-center">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-indigo-400 via-indigo-500 to-gray-300 bg-clip-text text-transparent">
               Languages, Skills & Tools
               </span>
             </h3>
@@ -348,7 +348,7 @@ const About = () => {
                   </p>
                 <div className="w-full bg-gray-700/30 rounded-full h-2">
                   <motion.div
-                    className="h-full rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+                    className="h-full rounded-full bg-gradient-to-r from-indigo-500 to-gray-500"
                     initial={{ width: 0 }}
                     animate={{ width: `${lang.level}%` }}
                     transition={{ duration: 1, delay: index * 0.1 }}

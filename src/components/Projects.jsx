@@ -3,11 +3,18 @@ import { motion, useInView, useScroll, useTransform, useSpring } from 'framer-mo
 import { FaExternalLinkAlt, FaArrowRight, FaGithub, FaCode, FaServer, FaRobot, FaGraduationCap } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import projectPictPortov1 from '../../images/1stportofolio.png';
-import projectPictPortov2 from '../../images/screenshot-portofolio.png';
-import projectPictNaturalSMP from '../../images/naturalsmp-screenshot.png';
-import projectPictNaniKore from '../../images/nanikoregroup.png';
-//import projectPictMTs from '../../images/PTSPMTs.png';
+// import projectPictPortov1 from '../../images/1stportofolio.png';
+// import projectPictPortov2 from '../../images/screenshot-portofolio.png';
+// import projectPictNaturalSMP from '../../images/naturalsmp-screenshot.png';
+// import projectPictNaniKore from '../../images/nanikoregroup.png';
+import AIAutomation from '../../images/AIAutomation.png';
+import AppPenjualan from '../../images/AppPenjualan.png';
+import AquaExplore from '../../images/AquaExplore.png';
+import ChatBot from '../../images/ChatBot.jpeg';
+import CRUDLaravel from '../../images/CRUDLaravel.png';
+import GameShooter from '../../images/GameShooter.jpeg';
+import ToolsPhoto from '../../images/ToolsPhoto.jpeg';
+
 
 const ProjectCard = ({ project, index }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -117,8 +124,8 @@ const ProjectCard = ({ project, index }) => {
             <span
               key={index}
                 className="text-xs px-2 py-1 rounded-full 
-                  bg-gradient-to-r from-blue-500/20 to-purple-500/20 border border-blue-400/30
-                  text-blue-300"
+                  bg-gradient-to-r from-indigo-500/20 to-gray-500/20 border border-indigo-400/30
+                  text-indigo-300"
             >
                 {tech}
             </span>
@@ -131,7 +138,7 @@ const ProjectCard = ({ project, index }) => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 text-sm text-white font-medium flex items-center justify-center py-2 rounded-md bg-gradient-to-r from-blue-500/30 to-purple-500/30 hover:from-blue-500/40 hover:to-purple-500/40"
+              className="mt-4 text-sm text-white font-medium flex items-center justify-center py-2 rounded-md bg-gradient-to-r from-indigo-500/30 to-gray-500/30 hover:from-indigo-500/40 hover:to-purple-500/40"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
             >
@@ -211,41 +218,61 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Website 2.0",
-      description: "My personal portfolio website built with React and Tailwind CSS, featuring smooth animations and responsive design.",
-      image: projectPictPortov2,
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/AnakTentara/Portofolio-2.0",
-      link: "https://haikaldev.my.id",
+      title: "Aqua Explore (Roblox Studio)",
+      description: "Game Roblox dengan genre Action Survival melawan monster bawah laut",
+      image: AquaExplore,
+      technologies: ["Roblox Studio"],
+      link: "https://trello.com/b/Q9JSUQBg",
       icon: FaCode
     },
     {
       id: 2,
-      title: "NaturalSMP Minecraft Server",
-      description: "A custom Minecraft server network with unique gameplay features, custom plugins, and a dedicated community.",
-      image: projectPictNaturalSMP,
-      technologies: ["Java", "PaperMC"],
-      link: "https://web.naturalsmp.xyz",
+      title: "App Penjualan berbasis java",
+      description: "Aplikasi untuk mencatat lalu mengelola data barang dari sebuah toko dan pembelian customer",
+      image: AppPenjualan,
+      technologies: ["Java", "Net Beans"],
+      github: "https://github.com/dziiaja/TokoPenjualan-NetBeans-.git",
       icon: FaServer
     },
     {
       id: 3,
-      title: "First Portfolio Website",
-      description: "My first portfolio website, designed and built from scratch to showcase my early development skills.",
-      image: projectPictPortov1,
-      technologies: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/AnakTentara/Portofolio",
-      link: "https://v1.haikaldev.my.id",
+      title: "Sistem CRUD Framework Laravel",
+      description: "Membuat Sistem Create,Read,Update dan Delete menggunakan framework laravel",
+      image: CRUDLaravel,
+      technologies: ["Laravel", "MySQL"],
+      github: "https://github.com/dziiaja/DzikriLaravel.git",
       icon: FaCode
     },
     {
       id: 4,
-      title: "NaniKore Group Website",
-      description: "A collaborative group website that features various projects and resources for the community.",
-      image: projectPictNaniKore,
-      technologies: ["React", "TailwindCSS", "Node.js"],
-      github: "https://github.com/AnakTentara/NaniKore-Group",
-      link: "https://group.haikaldev.my.id",
+      title: "AI Automation (Pencatat Keuangan)",
+      description: "AI yang berfungsi untuk mencatat dan mengelola keuangan hanya dengan mengirimkan pesan mengenai pengeluaran dan pemasukan",
+      image: AIAutomation,
+      technologies: ["n8n", "Telegram API", "Google API", "ChatGPT API"],
+      icon: FaRobot
+    },
+    {
+      id: 5,
+      title: "Game Shooter Berbasis Python",
+      description: "Membuat Game Shooter dengan bahasa pemograman Python",
+      image: GameShooter,
+      technologies: ["Python"],
+      icon: FaRobot
+    },
+    {
+      id: 6,
+      title: "ChatBot Python",
+      description: "Membuat Chatbot yang didalamnya user bisa berinteraksi seperti Mini Game, Menggambar, Kalkulator dan Bertanya",
+      image: ChatBot,
+      technologies: ["Python"],
+      icon: FaRobot
+    },
+    {
+      id: 7,
+      title: "Tools Photo Editing",
+      description: "Dalam tools ini user bisa mengedit gambar, menyesuaikan gambar sesuai kemauan user",
+      image: ToolsPhoto,
+      technologies: ["Python"],
       icon: FaRobot
     }
   ];
@@ -273,7 +300,7 @@ const Projects = () => {
             className="w-full max-w-3xl mx-auto px-4 flex flex-col items-center py-10 relative"
           >
             {/* Visual center guide - left */}
-            <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-r from-transparent to-blue-500/50"></div>
+            <div className="hidden md:block absolute left-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-r from-transparent to-indigo-500/50"></div>
             
             {/* Content */}
             <motion.h2
@@ -282,11 +309,11 @@ const Projects = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold text-center w-full"
             >
-              <strong className='font-bold bg-gradient-to-r from-blue-400 via-purple-600 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider'>My Projects</strong>
+              <strong className='font-bold bg-gradient-to-r from-indigo-400 via-indigo-600 to-gray-500 bg-clip-text text-transparent uppercase tracking-wider'>My Projects</strong>
             </motion.h2>
 
             <motion.div 
-              className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full my-6"
+              className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-gray-500 rounded-full my-6"
               initial={{ width: 0 }}
               animate={isHeadingInView ? { width: 96 } : { width: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -318,7 +345,7 @@ const Projects = () => {
             >
               {/* Glowing border effect */}
               <motion.div 
-                className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 opacity-30"
+                className="absolute inset-0 rounded-2xl bg-gradient-to-r from-indigo-500 via-indigo-500 to-gray-500 opacity-30"
                 animate={{ 
                   opacity: [0.2, 0.4, 0.2],
                   rotate: [0, 2, 0],
@@ -344,7 +371,7 @@ const Projects = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="p-4 rounded-xl bg-gradient-to-r from-blue-500/20 to-purple-500/20">
+                    <div className="p-4 rounded-xl bg-gradient-to-r from-indigo-500/20 to-gray-500/20">
                       <project.icon className="text-2xl text-white" size={28} />
                     </div>
                     <div className="flex-1">
@@ -357,8 +384,8 @@ const Projects = () => {
                           <span
                             key={index}
                             className="text-xs px-2 py-1 rounded-full 
-                              bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-400/20
-                              text-blue-300"
+                              bg-gradient-to-r from-indigo-500/10 to-gray-500/10 border border-gray-400/20
+                              text-indigo-300"
                           >
                             {tech}
                           </span>
@@ -376,7 +403,7 @@ const Projects = () => {
                         )}
                         {project.link && (
                           <a href={project.link} target="_blank" rel="noopener noreferrer"
-                             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-blue-600/50 text-white hover:bg-blue-600/70 transition-colors">
+                             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600/50 text-white hover:bg-indigo-600/70 transition-colors">
                             <FaExternalLinkAlt size={20} />
                             <span>Visit Project</span>
                           </a>

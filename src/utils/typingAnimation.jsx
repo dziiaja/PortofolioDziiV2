@@ -30,7 +30,7 @@ export const useTypingText = (text, speed = 40) => {
             repeatType: 'reverse'
           }
         }}
-        className="inline-block bg-primary w-1.5 h-5 ml-1"
+        className="inline-block bg-blue-300 w-1.5 h-5 ml-1"
       />
     </span>
   );

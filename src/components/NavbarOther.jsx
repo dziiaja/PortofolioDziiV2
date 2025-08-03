@@ -106,7 +106,7 @@ const NavbarOther = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Haikal Mabrur
+                Dzikri Putra Gumilar
               </motion.span>
             </Link>
 
@@ -121,7 +121,7 @@ const NavbarOther = () => {
                   <motion.span 
                     className={`text-sm font-medium transition-colors duration-300 ${
                       isActive(link.path) 
-                        ? 'text-blue-400' 
+                        ? 'text-indigo-400' 
                         : 'text-gray-300 hover:text-white'
                     }`}
                     whileHover={{ y: -2 }}
@@ -132,7 +132,7 @@ const NavbarOther = () => {
                   {/* Active indicator */}
                   {isActive(link.path) && (
                     <motion.div 
-                      className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-400"
+                      className="absolute bottom-0 left-0 w-full h-0.5 bg-indigo-400"
                       layoutId="activeIndicator"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -182,7 +182,7 @@ const NavbarOther = () => {
               <motion.span 
                 className={`text-sm font-medium ${
                   isActive(link.path) 
-                    ? 'text-[#ff3d4d]' 
+                    ? 'text-[#02bac7]' 
                     : 'text-gray-300'
                 }`}
                 whileHover={{ x: 5 }}

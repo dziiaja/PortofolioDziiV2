@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { FaGithub, FaInstagram, FaLinkedin, FaDiscord, FaYoutube, FaEnvelope, FaCopy, FaCheck, FaWhatsapp, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaDiscord, FaYoutube, FaEnvelope, FaCopy, FaCheck, FaWhatsapp, FaExternalLinkAlt, FaTiktok } from 'react-icons/fa';
+import CommentSection from '../components/CommentSection';
+
 
 const ContactCard = ({ icon: Icon, title, value, delay, action, color }) => {
   const [copied, setCopied] = useState(false);
@@ -122,25 +124,25 @@ const Contact = () => {
   // Contact information - replace with your actual details
   const contactInfo = [
     {
-      icon: FaEnvelope,
-      title: "Email",
-      value: "me@haikaldev.my.id",
-      color: "rgb(239, 68, 68)", // red
+      icon: FaInstagram,
+      title: "Instagram",
+      value: "Dzii.20",
+      color: "purple",
       delay: 1
     },
     {
       icon: FaDiscord,
       title: "Discord",
-      value: "haikalmabrur",
-      action: "https://discord.com/users/804720825109315605",
+      value: "DziiBroww",
+      action: "https://wa.me/6289531300561",
       color: "rgb(88, 101, 242)", // discord blue
       delay: 4
     },
     {
       icon: FaWhatsapp,
       title: "WhatsApp",
-      value: "(+62) 896-7573-2001",
-      action: "https://wa.me/6289675732001",
+      value: "(+62) 895-3130-0561",
+      action: "https://wa.me/6289531300561",
       color: "rgb(37, 211, 102)", // blue
       delay: 5
     },
@@ -148,11 +150,10 @@ const Contact = () => {
   
   // Social links for the bottom section
   const socialLinks = [
-    { icon: FaGithub, href: "https://github.com/AnakTentara", color: "#333", delay: 1 },
-    { icon: FaInstagram, href: "https://instagram.com/haikal_mabrur", color: "#E1306C", delay: 2 },
-    { icon: FaLinkedin, href: "https://linkedin.com/in/haikal-mabrur/", color: "#0077B5", delay: 3 },
-    { icon: FaWhatsapp, href: "https://wa.me/6289675732001", color: "#25D366", delay: 4 },
-    { icon: FaYoutube, href: "https://youtube.com/@AnakTentaraIDN", color: "#FF0000", delay: 5 },
+    { icon: FaGithub, href: "https://github.com/dziiaja", color: "#333", delay: 1 },
+    { icon: FaInstagram, href: "https://www.instagram.com/dzii.20/", color: "#E1306C", delay: 2 },
+    { icon: FaWhatsapp, href: "https://wa.me/6289531300561", color: "#25D366", delay: 4 },
+    { icon: FaTiktok, href: "https://www.tiktok.com/@panditaaptaa__?is_from_webapp=1&sender_device=pc", color: "#FF0000", delay: 5 },
 
   ];
   
@@ -162,7 +163,7 @@ const Contact = () => {
         {/* Background elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-40 -left-20 w-60 h-60 rounded-full bg-blue-500/10 blur-3xl"></div>
-          <div className="absolute bottom-40 -right-20 w-80 h-80 rounded-full bg-purple-500/10 blur-3xl"></div>
+          <div className="absolute bottom-40 -right-20 w-80 h-80 rounded-full bg-indigo-500/10 blur-3xl"></div>
         </div>
         
         {/* Section header */}
@@ -181,11 +182,11 @@ const Contact = () => {
               transition={{ duration: 0.5 }}
               className="text-4xl md:text-5xl font-bold text-center w-full"
             >
-              <strong className='font-bold bg-gradient-to-r from-blue-400 via-purple-600 to-pink-500 bg-clip-text text-transparent uppercase tracking-wider'>Let's Connect</strong>
+              <strong className='font-bold bg-gradient-to-r from-indigo-400 via-indigo-600 to-gray-500 bg-clip-text text-transparent uppercase tracking-wider'>Let's Connect</strong>
             </motion.h2>
 
             <motion.div 
-              className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full my-6"
+              className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-indigo-500 rounded-full my-6"
               initial={{ width: 0 }}
               animate={isTitleInView ? { width: 96 } : { width: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -205,6 +206,8 @@ const Contact = () => {
             <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-[5%] h-[1px] bg-gradient-to-l from-transparent to-purple-500/50"></div>
           </div>
         </div>
+
+        <CommentSection />
         
         {/* Contact info cards grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
