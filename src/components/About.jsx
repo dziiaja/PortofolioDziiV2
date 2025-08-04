@@ -245,7 +245,7 @@ const About = () => {
                           zikrigumilar2008@gmail.com
                         </p>
                       <div className="flex items-center gap-4">
-                        <a href="https://github.com/AnakTentara" target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/dziiaja" target="_blank" rel="noopener noreferrer"
                            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 transition-colors">
                           <FaGithub size={20} />
                           <span>GitHub</span>
